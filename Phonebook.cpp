@@ -80,7 +80,7 @@ class PhoneBook{
 				}
 			}
 			if (result == -1){
-				cout << "Such name doesn't exist";
+				cout << "Such name doesn't exist\n";
 			}
 			else{
 				cout << exist[result] << '\n';
@@ -89,7 +89,7 @@ class PhoneBook{
 		}
 		void IdFind(const int& Id) {
 			if (!exist.count(Id)){
-				cout << "Doesn't exist \n";
+				cout << "Such Id doesn't Id\n";
 			}
 			else{
 				cout << exist[Id] << '\n';
@@ -157,5 +157,6 @@ int main(){
 		if (Operation == "End"){
   			return 0;
 		}
+		
 	  }
 }
